@@ -1,5 +1,6 @@
 function toCamelCase(str) {
   let new_str = str.split(/[-_]+/);
+  console.log("New_str", new_str);
   let conv = new_str[0];
   if (str === "") {
     return "";

@@ -1,8 +1,8 @@
-function toCamelCase(str) {
+function toCamellCase(str) {
   return str
     .split(/-|_/g)
     .map(
-      (w, i) => (i > 0 ? w.charAt(0).toUpperCase() : w.charAt(0)) + w.slice(1)
+      (w, i) => (i > 0 ? w[0].toUpperCase() : w[0]) + w.slice(1)
     )
     .join("");
 }
@@ -22,3 +22,9 @@ function toCamelCase(str) {
 // let str = "the-stealth-warrior".replace(/[-_](.)/g, (_, c) => c)
 
 // console.log(str);
+
+let str = "the-stealth-warrior"
+
+console.log(toCamellCase(str));
+
+console.log(toCamelCase("DDo_dat_ting"));
